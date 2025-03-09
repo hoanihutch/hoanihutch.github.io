@@ -81,6 +81,32 @@
             font-weight: 500;
             margin: 10px 0;
         }
+
+        /* Sign In Link Styles */
+        .signin-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .signin-link {
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2vw;
+            padding: 8px 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .signin-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            font-weight: 600;
+        }
     
         /* Media Query for Small Screens */
         @media (max-width: 768px) {
@@ -92,6 +118,10 @@
             }
             .contact-link {
                 font-size: 4vw;
+            }
+            .signin-link {
+                font-size: 3vw;
+                padding: 6px 12px;
             }
         }
     
@@ -106,6 +136,10 @@
             .contact-link {
                 font-size: 5vw;
             }
+            .signin-link {
+                font-size: 4vw;
+                padding: 5px 10px;
+            }
         }
     </style>    
     
@@ -114,6 +148,10 @@
 
 <div class="background">
     <div class="overlay"></div> <!-- Dark overlay -->
+</div>
+
+<div class="signin-container">
+    <a href="https://app.flow-deck.com" class="signin-link">Flowdeck App</a>
 </div>
 
 <div class="container">
